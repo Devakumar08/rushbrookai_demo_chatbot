@@ -1,0 +1,91 @@
+<!doctype html> <html lang="en"> <head> <meta charset="utf-8" /> <meta name="viewport" content="width=device-width,initial-scale=1" /> <title>Rushbrook AI — Automation that works the way you do</title> <meta name="description" content="Rushbrook AI helps businesses save time and scale faster by eliminating repetitive tasks with custom AI automation." /> <style> :root{ --bg:#0b0f14; --panel:#101823; --ink:#e8f1ff; --muted:#9bb3d0; --brand:#66d1ff; --brand2:#72f5c6; --line:#1a2432; } *{box-sizing:border-box} html,body{height:100%} body{ margin:0; font:16px/1.6 system-ui,-apple-system,Inter,Segoe UI,Roboto,sans-serif; color:var(--ink); background:linear-gradient(180deg,#0b0f14 0%,#0c121b 100%); } .container{max-width:1100px;margin:0 auto;padding:24px} header{display:flex;align-items:center;justify-content:space-between;padding:14px 0} .logo{font-weight:800;letter-spacing:.3px} .logo span{color:var(--brand)} nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-size:14px} nav a:hover{color:var(--ink)} .hero{ display:grid;gap:24px;grid-template-columns:1.2fr .8fr;align-items:center;padding:40px 0 10px; } h1{font-size:clamp(28px,4vw,44px);line-height:1.1;margin:0 0 10px} .lead{color:var(--muted);margin:0 0 20px} .cta{ display:inline-flex;align-items:center;gap:10px;border:0;border-radius:12px; padding:12px 16px;background:linear-gradient(90deg,var(--brand),var(--brand2)); color:#03131e;font-weight:800;text-decoration:none } .panel{ background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:18px } .grid{display:grid;gap:16px;grid-template-columns:repeat(3,1fr)} .grid h3{margin:0 0 6px} section{padding:28px 0} .kicker{color:var(--brand);font-weight:700;font-size:12px;letter-spacing:.18em;text-transform:uppercase} .list{margin:10px 0 0 18px; padding:0} .list li{margin:6px 0} footer{color:var(--muted);font-size:14px;padding:40px 0;border-top:1px solid var(--line);margin-top:30px} /* Chat mount */ #chatbot{position:fixed;right:20px;bottom:20px;z-index:50} @media (max-width:900px){ .hero{grid-template-columns:1fr} .grid{grid-template-columns:1fr} nav{display:none} } </style> </head> <body> <div class="container"> <header> <div class="logo">Rushbrook <span>AI</span></div> <nav> <a href="#how">How it works</a> <a href="#use">Use cases</a> <a href="#contact">Contact</a> </nav> </header><section class="hero">
+  <div>
+    <h1>AI that works the way you do</h1>
+    <p class="lead">Eliminate repetitive tasks, plug into your existing tools, and see measurable results fast. Start with leads, bookings, or onboarding—then scale across operations.</p>
+    <a class="cta" href="#contact">Get Started</a>
+  </div>
+  <div class="panel">
+    <div class="kicker">Smart places to start</div>
+    <ul class="list">
+      <li>Leads: AI capture, scoring, instant follow‑ups</li>
+      <li>Bookings: calendar sync, reminders, confirmations</li>
+      <li>Onboarding: welcome packs, forms, progress tracking</li>
+    </ul>
+  </div>
+</section>
+
+<section id="how">
+  <div class="panel">
+    <div class="kicker">Our process</div>
+    <div class="grid">
+      <div>
+        <h3>Discover</h3>
+        <p class="lead">Analyze workflows, surface bottlenecks, and map ROI with a clear roadmap and timelines.</p>
+      </div>
+      <div>
+        <h3>Design</h3>
+        <p class="lead">Build tailored automations that plug into your stack and scale as you grow.</p>
+      </div>
+      <div>
+        <h3>Deploy</h3>
+        <p class="lead">Implement, test, train your team, and optimize continually for impact.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="use">
+  <div class="panel">
+    <div class="kicker">Why Rushbrook</div>
+    <div class="grid">
+      <div>
+        <h3>Works with your tools</h3>
+        <p class="lead">Integrates with CRMs, calendars, inboxes, and your website with minimal disruption.</p>
+      </div>
+      <div>
+        <h3>Fast payback</h3>
+        <p class="lead">Track time saved, revenue unlocked, and tasks offloaded with clear ROI.</p>
+      </div>
+      <div>
+        <h3>Team-first</h3>
+        <p class="lead">Automation enhances human workflows so teams focus on higher‑value work.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="panel">
+    <div class="kicker">Let’s talk</div>
+    <p class="lead">Have a use case in mind or want a quick assessment? Open the chat to share details, or add your JavaScript integration below.</p>
+    <!-- Placeholder: You can replace this with a real contact form if needed -->
+    <a class="cta" href="#!" onclick="document.getElementById('chatbot').scrollIntoView({behavior:'smooth'})">Open Chat</a>
+  </div>
+</section>
+
+<footer>
+  <div>© <span id="year"></span> Rushbrook AI Pty Ltd · All rights reserved</div>
+</footer>
+</div>
+
+
+<script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '68b1de6e6683efe56ad26883' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production',
+          voice: {
+            url: "https://runtime-api.voiceflow.com"
+          }
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
+
+ 
+
+<script> document.getElementById('year').textContent = new Date().getFullYear(); </script> </body> </html>
